@@ -41,8 +41,8 @@ postgres = ["psycopg2-binary>=2.9.0"]
 dev = ["pytest", "httpx"]
 
 [project.urls]
-Homepage = "https://github.com/CloudBannaPepper/open-AWS-scanner"
-Issues = "https://github.com/CloudBannaPepper/open-AWS-scanner/issues"
+Homepage = "https://github.com/CloudBananaPepper/open-AWS-scanner"
+Issues = "https://github.com/CloudBananaPepper/open-AWS-scanner/issues"
 
 [project.scripts]
 open-aws-scanner = "open_aws_scanner.cli:main"
