@@ -529,6 +529,9 @@ GitHub Release. Publishing that release triggers the existing PyPI workflow.
 
 The workflow can also be started manually from the repository's **Actions** tab.
 
+When a patch release is created, the workflow sends a release summary through
+the authenticated CloudBananaPepper contact alert endpoint.
+
 To email the release summary through the CloudBananaPepper contact API, add
 these repository secrets under **Settings → Secrets and variables → Actions**:
 
