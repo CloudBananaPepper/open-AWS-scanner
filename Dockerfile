@@ -5,7 +5,10 @@ WORKDIR /app
 COPY pyproject.toml .
 COPY open_aws_scanner/ open_aws_scanner/
 
-RUN pip install --no-cache-dir .
+RUN apt-get update \
+    && apt-get upgrade -y \
+    && rm -rf /var/lib/apt/lists/* \
+    && pip install --no-cache-dir .
 
 EXPOSE 8000
 
